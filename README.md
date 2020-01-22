@@ -23,4 +23,4 @@ Please make sure to update tests as appropriate.
 
 ## Authors
 
-Gabriel Montaño - [@exploitpnk]: https://twitter.com/exploitpnk
+Gabriel Montaño - @exploitpnk: https://twitter.com/exploitpnk
