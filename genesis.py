@@ -19,7 +19,7 @@ except:
 # Source of information
 source = "http://blogs.eltiempo.com/feed/"
 # Time in seconds
-time = 86400  
+time = 86400
 
 
 def update_status():
@@ -28,7 +28,7 @@ def update_status():
     data = feedparser.parse(source)
 
     title = data.entries[0].title
-    link =data.entries[0].link
+    link = data.entries[0].link
 
     tweet = (title + " - " + link)
     tweepy.update_status(tweet)
