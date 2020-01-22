@@ -2,39 +2,39 @@ import tweepy
 import time
 import feedparser
 
-# Authenticate to Twitter
-auth = tweepy.OAuthHandler("XXXXXXX", "XXXXXXXX")
-auth.set_access_token("XXXXXXXX-XXXXXXXX", "XXXXXXXXXX")
-
-# Name api
+# Auth to Twitter
+auth = tweepy.OAuthHandler("XXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+auth.set_access_token("XXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
 tweepy = tweepy.API(auth)
 
-# Check credentials Twitter
+# Verify credentials
 try:
     tweepy.verify_credentials()
     print("Authentication OK")
 except:
     print("Error during authentication")
 
-# update_status - get the rss of the site 
+
+# Source of information
+source = "http://blogs.eltiempo.com/feed/"
+# Time in seconds
+time = 86400  
+
 
 def update_status():
-	# save the content rss into data
-	data = feedparser.parse("https://securityaffairs.co/wordpress/feed")
-	# call the lastest title post
-	title = data.entries[0].title
-	# call the lastest link post
-	link =data.entries[0].link
-	# format text for tweet
-	post = title + " - " + link
-	#post tweet
-	tweepy.update_status(post)
-	# print stdout of tweet 
-	print(post)
+    """ Get data from source """
 
-#update status 3 times of day. 
+    data = feedparser.parse(source)
+
+    title = data.entries[0].title
+    link =data.entries[0].link
+
+    tweet = (title + " - " + link)
+    tweepy.update_status(tweet)
+
+    print("[#] Tweet sent: {}".format(tweet))
+
 while True:
-	update_status()
-	time.sleep(28800)
-
+    update_status()
+    time.sleep(time)
