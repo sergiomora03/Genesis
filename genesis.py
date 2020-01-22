@@ -4,7 +4,7 @@ import feedparser
 
 # Auth to Twitter
 auth = tweepy.OAuthHandler("XXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
-auth.set_access_token("XXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+auth.set_access_token("XXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
 tweepy = tweepy.API(auth)
 
@@ -17,9 +17,9 @@ except:
 
 
 # Source of information
-source = "http://blogs.eltiempo.com/feed/"
-# Time in seconds
-time = 86400
+source = "https://securityaffairs.co/wordpress/feed"
+# Time in seconds (24 hours)
+time_sec = 86400
 
 
 def update_status():
@@ -37,4 +37,4 @@ def update_status():
 
 while True:
     update_status()
-    time.sleep(time)
+    time.sleep(time_sec)
