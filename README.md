@@ -1,4 +1,4 @@
-# Genesis
+# Genesis bot for Twitter
 
 Genesis it's a bot for Twitter
 
@@ -24,3 +24,4 @@ Please make sure to update tests as appropriate.
 ## Authors
 
 * **Gabriel Montaño** - [@exploitpnk](https://twitter.com/exploitpnk)
+* **Camilo Baquero** - [@ecamilooob](https://twitter.com/camilooob)
