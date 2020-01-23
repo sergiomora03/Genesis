@@ -24,4 +24,4 @@ Please make sure to update tests as appropriate.
 ## Authors
 
 * **Gabriel Montaño** - [@exploitpnk](https://twitter.com/exploitpnk)
-* **Camilo Baquero** - [@ecamilooob](https://twitter.com/camilooob)
+* **Camilo Baquero** - [@camilooob](https://twitter.com/camilooob)
