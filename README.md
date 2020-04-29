@@ -1,6 +1,6 @@
 # Genesis bot for Twitter
 
-Genesis it's a bot for Twitter
+Genesis bot reads an RSS and tweet the last entry.
 
 ## Installation
 
