@@ -1,6 +1,6 @@
 # Genesis bot for Twitter
 
-Genesis bot reads an RSS and tweet the last entry.
+Genesis bot reads an RSS and tweet the last entry for you, it could be news, or blog posts for example.
 
 ## Installation
 
