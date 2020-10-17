@@ -33,7 +33,7 @@ def update_status():
     tweet = (title + " - " + link)
     tweepy.update_status(tweet)
 
-    print("[#] Tweet sent: {}".format(tweet))
+    print(f"[#] Tweet sent: {tweet}"))
 
 while True:
     update_status()
